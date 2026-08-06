@@ -1,0 +1,65 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing:border-box;
+}
+
+html,body{
+width:100%;
+height:100%;
+}
+:root{
+    --main-page-color:#;
+    --text-color:black;
+
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 14px;
+    }
+}
+/*kuch nhi bss space dena tha upr isliye use kiya*/
+.parent{
+    margin:30px;
+}
+
+/*!nav bar ke liye styling kiya hai*/
+.nav-bar ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    align-items:center;
+    gap:15px;
+}
+
+.nav-bar ul li{
+    font-size:15px;
+}
+
+
+
+/*ecopulse ko align krne ke liye*/
+/* isme top-menu parent hai or h1 uska child*/
+/*todo color sochna hai or logo*/
+.top-menu h1{
+    text-align:center;
+    color:var(--text-color);
+    letter-spacing:4px;
+    font-size:30px;
+    font-style:bold;
+    margin-top:200px;
+    position: relative;
+    opacity:0.7;
+}
+
+#bg-video{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    object-fit:cover;
+    z-index:-1;
+}
+    
