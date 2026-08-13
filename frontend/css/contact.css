@@ -1,0 +1,80 @@
+/* ===== CONTACT FORM ===== */
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    background: #fafafa;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--title-color);
+    background: white;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px 20px;
+    background: var(--title-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(207, 8, 207, 0.2);
+}
+
+/* ===== RESPONSIVE CONTACT ===== */
+@media (max-width: 599px) {
+    .contact-form {
+        margin: 20px auto 0;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+
+    .submit-btn {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    .submit-btn {
+        padding: 10px 14px;
+        font-size: 0.85rem;
+    }
+}
